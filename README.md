@@ -6,29 +6,16 @@ In project 6 I will create my own custom exploratory data analysis (EDA) project
 
 ## Bukola Adeniyan
 
-## How to Install and Run the Project
-
-## Create Project
-Created a new repo in GitHub with the name 'datafunn-06-EDA' 
-
-Added the default README.md 
-
-Named the script "bykola_eda.ipynb"
-
-## Cloned project down to my machine
-Opened VS Code 
-
-Used file > open folder to access the folder where I want my project to reside
-
-Opened a new terminal (with powershell as default) 
-
-Used the 'git clone' command to clone the project to my machine
-
-```shell
-
-git clone site_URL
-
-```
+## Environment Setup
+1. Created a new repo in GitHub with the name 'datafunn-06-EDA' on Git Hub.
+1. Added the default README.md
+1. Cloned project down to my machine (git clone site_URL)
+1. Named the script "bykola_eda.ipynb"
+1. Create and activate the project's virtual environment.
+1. Install all required packages into your local project virtual environment.
+1. After installing the required dependencies, update or generate a requirements.txt file.
+1. Add a .gitignore file to your project with useful entries. See .gitignore example.
+1. Document the steps and commands in your README.md.
 
 ## Created and activated a Python virtual environment
 Used the following command to create a virtual environment:
@@ -64,7 +51,7 @@ py -m pip freeze > requirements.txt
 ```
 
 ## Created .gitignore
-Created a new file in my datafun-05-sql-project folder named .gitignore
+Created a new file in my datafunn-06-eda-project folder named .gitignore
 
 Typed .venv/ into line 1
 
@@ -88,11 +75,8 @@ git push origin main
 ```
 
 ## Chose a data set
-Chose a data set that is pre-installed in Seaborn. Using a well known and clean dataset ensures that I can focus on the required specifications and skills in the project instead of spending time cleaning the data. The data set that I chose was:
-
-- [tips.csv](https://github.com/mwaskom/seaborn-data/blob/master/tips.csv)
-
-This data documents a set of 245 total restaurant bills --- complete with total bill amount, tip amount, party size, day of the week, time of day, smoker status, and customer gender. 
+Chose a data set that is pre-installed in Seaborn, using a well-known and clean dataset.
+This'Diamonds.csv' dataset, contains various attributes of diamonds, including carat, cut, color, clarity, depth, table, price, and dimensions (x, y, z).
 
 ## Imported local dependencies and loaded data
 Imported required local dependencies and loaded the required data into vs code.
@@ -103,9 +87,9 @@ import pandas as pd
 import seaborn as sns
 
 # Load the dataset into a pandas DataFrame - adjust this process for your custom data
-df = sns.load_dataset('tips')
+df = sns.load_dataset('Diamonds')
 
-# Inspect first rows of the DataFrame
+# Inspect the first rows of the DataFrame
 print(df.head())
 
 ```
@@ -134,16 +118,10 @@ print(df.describe())
 Created multiple histograms to analyze the data distribution of both the numerical columns and categorical columns.
 
 ## Data transformation and feature engineering
-Transformed the data by renaming two columns and adding one additional column.
-
-## Chose two goal questions to answer
-Chose the following two goal questions to answer through data analysis:
-
-Which day of the week and time of day yields the highest tips?
-Who tips better, men or women?
+Transformed the data by renaming a column and adding one additional column.
 
 ## Created visualizations to present data and tell a story
-Created swarm plots and bar graphs to illustrate the data analysis required to answer the goal questions. Extensive data manipulation was also performed in order to ensure data integrity. 
+Created scatter plots and box plot to illustrate the data analysis. Extensive data manipulation was also performed to ensure data integrity. 
 
 ## Repeated Git add and commit
 Periodically add, commit, and push files from my machine to the associated online repo using the following commands:
