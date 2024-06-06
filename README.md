@@ -1,5 +1,6 @@
 # Project 6 EDA Notebook
-module 6 project
+
+## Analysis of Diamonds dataset
 
 ## Overview
 In project 6 I will create my own custom exploratory data analysis (EDA) project using GitHub, Git, Jupyter, pandas, Seaborn and other popular data analytics tools.
